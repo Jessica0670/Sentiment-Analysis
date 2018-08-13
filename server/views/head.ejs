@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+    <title>TwitterData</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+<!-- dimple -->
+    <script src="http://d3js.org/d3.v4.min.js"></script>
+    <script src="http://dimplejs.org/dist/dimple.v2.3.0.min.js"></script>
+    <!-- d3 -->
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+    <script src="https://d3js.org/d3-selection.v1.js"></script>
+
+    <!-- p5 -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+    <script src="../../Graph/p5/sketch.js"></script> -->
+    <!-- AJAX/jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- react -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+    <style>
+        /* body        { padding-top:80px; } */
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+<script type="text/babel">
+// var d3Chart = require('./d3Chart');
+
+</script>
+
+<style> /* set the CSS */
+
+
+.grid line {
+  stroke: aquamarine;
+  stroke-opacity: 0.7;
+  shape-rendering: crispEdges;
+}
+
+.grid path {
+  stroke-width: 1;
+}
+
+
+</style>
+
+</head>
+<body>
+  <div style="background-image: url(/assets/header2.png); background-position: 50% -100%;
+              margin-top: -25px; padding-top: 30px;" class="page-header text-center">
+      <h1>
+        <a style="margin-left:15px;margin-right:15px" >
+          <img style="width:50px; border-radius: 10px; margin-bottom: 20px;" src="/assets/fblogo.png" />
+        </a>
+       <%= company.name %>
+      </h1>
+      <a href="/" class="btn btn-default btn-sm">Home page</a>
+      <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+  </div>
+<div class="container">

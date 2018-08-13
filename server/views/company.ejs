@@ -1,0 +1,51 @@
+<% include head.ejs%>
+
+
+    <div class="row">
+
+        <!-- LOCAL INFORMATION -->
+        <div class="col-sm-3">
+            <div class="well">
+              <center>
+                <h3>
+                    <a style="margin-left:15px;margin-right:15px" >
+                      <img style="width:150px; border-radius: 10px; margin-bottom: 20px;" src="/assets/markz.jpg" />
+                    </a>
+
+                  </span>Mark Zuckerberg
+                </h3>
+                <h4 style="position: center">CEO</h4>
+                </center>
+
+
+                <a href="/unlink/local" class="btn btn-default">Unlink</a>
+
+
+            </div>
+        </div>
+
+
+        <div class="col-sm-9">
+            <div class="well">
+              <ul style="list-style-type:none; margin-right: 30px;">
+              <% for(var i = 0; i < renderData.length; i++){ %>
+                <% renderData = Array.from(new Set(renderData)) %>
+                <% if(renderData.length > 10) { %>
+                  <% renderData.splice(0, 1) %>
+                <% } %>
+                <li style="margin-top: 15px;
+                padding: 10px;
+                -webkit-box-shadow: 0 7px 4px #777;
+                -moz-box-shadow: 0 7px 4px #777;
+                box-shadow: 0 7px 4px #777;
+                background-color: white;">
+                <p>testing</p>
+                <%= renderData[i].message %>
+                <%= renderData[i].time %>
+              </li>
+                <% } %>
+              </ul>
+
+            </div>
+        </div>
+<% include foot.ejs%>
